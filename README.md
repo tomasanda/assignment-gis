@@ -12,8 +12,6 @@ Build a map-based application, which lets the user see geo-based data on a map a
 
 ## My project
 
-Fill in (either in English, or in Slovak):
-
 **Application description**:
 
 iOS application which can display the following use cases on Mapbox map:
