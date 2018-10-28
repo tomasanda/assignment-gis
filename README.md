@@ -20,6 +20,7 @@ iOS application which can display the following use cases on Mapbox map:
 - The nearest railway stations to the selected prison
 - The shortest route from railway station A to railway station B
 - The shortest route from railway station A to railway station B with a stop in the station C
+- Cycle route which has the most intersection with rivers
 
 **Data source**:
 - [Mass.gov](https://www.mass.gov/service-details/massgis-data-layers)
