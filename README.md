@@ -16,7 +16,7 @@ Build a map-based application, which lets the user see geo-based data on a map a
 
 iOS application which can display the following use cases on Mapbox map:
 
-- Massachusetts forest coverage 
+- Massachusetts forest coverage in %
 - The nearest railway stations to the selected prison
 - The shortest route from railway station A to railway station B
 - The shortest route from railway station A to railway station B with a stop in the station C
