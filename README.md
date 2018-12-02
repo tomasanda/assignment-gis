@@ -19,7 +19,7 @@ iOS application which can display the following use cases on Mapbox map:
 - Massachusetts % coverage by selected land use type
 - The nearest railway stations to the selected prison
 - The shortest route from railway station A to railway station B
-- The shortest route from railway station A to railway station B with a stop in the station C
+- The shortest route from railway station A to railway station C with a stop in the station B
 - Cycle route which has the most intersection with rivers
 - MassDEP Oil and/or Hazardous Material Sites with Activity and Use Limitations (AUL) - heatmap
 
