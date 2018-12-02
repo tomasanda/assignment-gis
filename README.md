@@ -31,3 +31,4 @@ iOS application which can display the following use cases on Mapbox map:
 - Flask
 - Swift 
 - Mapbox SDK for iOS
+- shp2pgsql
