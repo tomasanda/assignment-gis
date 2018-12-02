@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.7.3)
+  - geos (3.7.0)
+  - GEOSwift (3.0.2):
+    - geos (= 3.7.0)
+  - Mapbox-iOS-SDK (4.5.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - GEOSwift
+  - Mapbox-iOS-SDK
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - geos
+    - GEOSwift
+    - Mapbox-iOS-SDK
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  geos: de7d149482a5798a4b5cfda2f0dbabd5a23f2591
+  GEOSwift: 430ab0cda2837ebc99d417c97e167ef2171673a2
+  Mapbox-iOS-SDK: fb9dde66106a8f10d351f9697ac198049c8e5511
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 54138e1fb7c78548f0f5fc6b61dd19ba681208fe
+
+COCOAPODS: 1.5.3

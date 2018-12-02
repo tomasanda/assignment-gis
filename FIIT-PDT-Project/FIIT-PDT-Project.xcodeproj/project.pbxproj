@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18A6485815595FC0ACBD7DDD /* Pods_FIIT_PDT_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE02ACF3972F9D39A7D9ECF /* Pods_FIIT_PDT_Project.framework */; };
+		E214264F216559FD00B1BF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E214264E216559FD00B1BF43 /* AppDelegate.swift */; };
+		E2142651216559FD00B1BF43 /* MapViewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2142650216559FD00B1BF43 /* MapViewController02.swift */; };
+		E2142654216559FD00B1BF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2142652216559FD00B1BF43 /* Main.storyboard */; };
+		E2142656216559FF00B1BF43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2142655216559FF00B1BF43 /* Assets.xcassets */; };
+		E2142659216559FF00B1BF43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2142657216559FF00B1BF43 /* LaunchScreen.storyboard */; };
+		E220E0B72180FCD7006BE5B8 /* Geom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0B62180FCD7006BE5B8 /* Geom.swift */; };
+		E220E0B92180FD27006BE5B8 /* GeomDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0B82180FD27006BE5B8 /* GeomDto.swift */; };
+		E220E0BB2180FD36006BE5B8 /* GeomConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0BA2180FD36006BE5B8 /* GeomConverter.swift */; };
+		E220E0CF2181012A006BE5B8 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0C92181012A006BE5B8 /* MapViewPresenter.swift */; };
+		E220E0D02181012A006BE5B8 /* MapViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0CA2181012A006BE5B8 /* MapViewWorker.swift */; };
+		E220E0D12181012A006BE5B8 /* MapViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0CB2181012A006BE5B8 /* MapViewRouter.swift */; };
+		E220E0D22181012A006BE5B8 /* MapViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0CC2181012A006BE5B8 /* MapViewModels.swift */; };
+		E220E0D32181012A006BE5B8 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0CD2181012A006BE5B8 /* MapViewViewController.swift */; };
+		E220E0D42181012A006BE5B8 /* MapViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0CE2181012A006BE5B8 /* MapViewInteractor.swift */; };
+		E220E0D72181040A006BE5B8 /* GeomCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0D62181040A006BE5B8 /* GeomCollection.swift */; };
+		E220E0D921810417006BE5B8 /* GeomCollectionDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0D821810416006BE5B8 /* GeomCollectionDto.swift */; };
+		E220E0DB21810426006BE5B8 /* GeomCollectionConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220E0DA21810426006BE5B8 /* GeomCollectionConverter.swift */; };
+		E2576981217FB86500B3033F /* GEOJSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2576980217FB86500B3033F /* GEOJSONKit.swift */; };
+		E293CA0B21871C9600C112AB /* C2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293CA0521871C9600C112AB /* C2ViewController.swift */; };
+		E293CA3221872B2000C112AB /* C1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293CA3121872B2000C112AB /* C1ViewController.swift */; };
+		E293CA3421872B3400C112AB /* C3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293CA3321872B3400C112AB /* C3ViewController.swift */; };
+		E293CA3621872B4100C112AB /* C4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293CA3521872B4100C112AB /* C4ViewController.swift */; };
+		E293CA3821872B5000C112AB /* C5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293CA3721872B5000C112AB /* C5ViewController.swift */; };
+		E293CA3A21873D2200C112AB /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293CA3921873D2200C112AB /* Double+.swift */; };
+		E2EE07AA217D22DF00866DF8 /* NetworkServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07A5217D22DF00866DF8 /* NetworkServiceManager.swift */; };
+		E2EE07AB217D22DF00866DF8 /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07A6217D22DF00866DF8 /* ServiceCall.swift */; };
+		E2EE07AC217D22DF00866DF8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07A7217D22DF00866DF8 /* NetworkConfig.swift */; };
+		E2EE07AD217D22DF00866DF8 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07A8217D22DF00866DF8 /* Environment.swift */; };
+		E2EE07AE217D22DF00866DF8 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07A9217D22DF00866DF8 /* ErrorHandler.swift */; };
+		E2EE07B2217D242400866DF8 /* MapWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07B1217D242400866DF8 /* MapWorker.swift */; };
+		E2EE07B4217D372500866DF8 /* GeoJSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EE07B3217D372500866DF8 /* GeoJSONConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		137C13B19A9B65EFB856CA33 /* Pods-FIIT-PDT-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIIT-PDT-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIIT-PDT-Project/Pods-FIIT-PDT-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		8749156181C11B053263C95D /* Pods-FIIT-PDT-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIIT-PDT-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIIT-PDT-Project/Pods-FIIT-PDT-Project.release.xcconfig"; sourceTree = "<group>"; };
+		CFE02ACF3972F9D39A7D9ECF /* Pods_FIIT_PDT_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIIT_PDT_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E214264B216559FD00B1BF43 /* FIIT-PDT-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIIT-PDT-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E214264E216559FD00B1BF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2142650216559FD00B1BF43 /* MapViewController02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController02.swift; sourceTree = "<group>"; };
+		E2142653216559FD00B1BF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2142655216559FF00B1BF43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2142658216559FF00B1BF43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E214265A216559FF00B1BF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E220E0B62180FCD7006BE5B8 /* Geom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geom.swift; sourceTree = "<group>"; };
+		E220E0B82180FD27006BE5B8 /* GeomDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomDto.swift; sourceTree = "<group>"; };
+		E220E0BA2180FD36006BE5B8 /* GeomConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomConverter.swift; sourceTree = "<group>"; };
+		E220E0C92181012A006BE5B8 /* MapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
+		E220E0CA2181012A006BE5B8 /* MapViewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewWorker.swift; sourceTree = "<group>"; };
+		E220E0CB2181012A006BE5B8 /* MapViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRouter.swift; sourceTree = "<group>"; };
+		E220E0CC2181012A006BE5B8 /* MapViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModels.swift; sourceTree = "<group>"; };
+		E220E0CD2181012A006BE5B8 /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
+		E220E0CE2181012A006BE5B8 /* MapViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewInteractor.swift; sourceTree = "<group>"; };
+		E220E0D62181040A006BE5B8 /* GeomCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomCollection.swift; sourceTree = "<group>"; };
+		E220E0D821810416006BE5B8 /* GeomCollectionDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomCollectionDto.swift; sourceTree = "<group>"; };
+		E220E0DA21810426006BE5B8 /* GeomCollectionConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomCollectionConverter.swift; sourceTree = "<group>"; };
+		E2576980217FB86500B3033F /* GEOJSONKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEOJSONKit.swift; sourceTree = "<group>"; };
+		E293CA0521871C9600C112AB /* C2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C2ViewController.swift; sourceTree = "<group>"; };
+		E293CA3121872B2000C112AB /* C1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C1ViewController.swift; sourceTree = "<group>"; };
+		E293CA3321872B3400C112AB /* C3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C3ViewController.swift; sourceTree = "<group>"; };
+		E293CA3521872B4100C112AB /* C4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4ViewController.swift; sourceTree = "<group>"; };
+		E293CA3721872B5000C112AB /* C5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C5ViewController.swift; sourceTree = "<group>"; };
+		E293CA3921873D2200C112AB /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		E2EE07A5217D22DF00866DF8 /* NetworkServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceManager.swift; sourceTree = "<group>"; };
+		E2EE07A6217D22DF00866DF8 /* ServiceCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
+		E2EE07A7217D22DF00866DF8 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		E2EE07A8217D22DF00866DF8 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		E2EE07A9217D22DF00866DF8 /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		E2EE07B1217D242400866DF8 /* MapWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWorker.swift; sourceTree = "<group>"; };
+		E2EE07B3217D372500866DF8 /* GeoJSONConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONConverter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2142648216559FD00B1BF43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A6485815595FC0ACBD7DDD /* Pods_FIIT_PDT_Project.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C563B831CF6DC2455A778303 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				137C13B19A9B65EFB856CA33 /* Pods-FIIT-PDT-Project.debug.xcconfig */,
+				8749156181C11B053263C95D /* Pods-FIIT-PDT-Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1FAF07DF8E2A8B2E75EF9B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFE02ACF3972F9D39A7D9ECF /* Pods_FIIT_PDT_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2142642216559FD00B1BF43 = {
+			isa = PBXGroup;
+			children = (
+				E214264D216559FD00B1BF43 /* FIIT-PDT-Project */,
+				E214264C216559FD00B1BF43 /* Products */,
+				C563B831CF6DC2455A778303 /* Pods */,
+				E1FAF07DF8E2A8B2E75EF9B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E214264C216559FD00B1BF43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E214264B216559FD00B1BF43 /* FIIT-PDT-Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E214264D216559FD00B1BF43 /* FIIT-PDT-Project */ = {
+			isa = PBXGroup;
+			children = (
+				E293C9EE21871C0000C112AB /* New Group */,
+				E2EE07AF217D240600866DF8 /* Common */,
+				E293C9EF21871C4700C112AB /* C1 */,
+				E293C9F121871C5700C112AB /* C2 */,
+				E293C9F221871C6400C112AB /* C3 */,
+				E293C9F321871C6C00C112AB /* C4 */,
+				E293C9F421871C7300C112AB /* C5 */,
+				E220E0BC218100E3006BE5B8 /* MapView */,
+				E214264E216559FD00B1BF43 /* AppDelegate.swift */,
+				E2142650216559FD00B1BF43 /* MapViewController02.swift */,
+				E2EE07B3217D372500866DF8 /* GeoJSONConverter.swift */,
+				E2142652216559FD00B1BF43 /* Main.storyboard */,
+				E2142655216559FF00B1BF43 /* Assets.xcassets */,
+				E2142657216559FF00B1BF43 /* LaunchScreen.storyboard */,
+				E214265A216559FF00B1BF43 /* Info.plist */,
+				E2EE07A3217D227400866DF8 /* Generic */,
+			);
+			path = "FIIT-PDT-Project";
+			sourceTree = "<group>";
+		};
+		E220E0B42180FC99006BE5B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E220E0B52180FCB7006BE5B8 /* Geom */,
+				E220E0D5218103F5006BE5B8 /* GeomCollection */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E220E0B52180FCB7006BE5B8 /* Geom */ = {
+			isa = PBXGroup;
+			children = (
+				E220E0B62180FCD7006BE5B8 /* Geom.swift */,
+				E220E0B82180FD27006BE5B8 /* GeomDto.swift */,
+				E220E0BA2180FD36006BE5B8 /* GeomConverter.swift */,
+			);
+			path = Geom;
+			sourceTree = "<group>";
+		};
+		E220E0BC218100E3006BE5B8 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				E220E0C92181012A006BE5B8 /* MapViewPresenter.swift */,
+				E220E0CA2181012A006BE5B8 /* MapViewWorker.swift */,
+				E220E0CB2181012A006BE5B8 /* MapViewRouter.swift */,
+				E220E0CC2181012A006BE5B8 /* MapViewModels.swift */,
+				E220E0CD2181012A006BE5B8 /* MapViewViewController.swift */,
+				E220E0CE2181012A006BE5B8 /* MapViewInteractor.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		E220E0D5218103F5006BE5B8 /* GeomCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E220E0D62181040A006BE5B8 /* GeomCollection.swift */,
+				E220E0D821810416006BE5B8 /* GeomCollectionDto.swift */,
+				E220E0DA21810426006BE5B8 /* GeomCollectionConverter.swift */,
+			);
+			path = GeomCollection;
+			sourceTree = "<group>";
+		};
+		E293C9EE21871C0000C112AB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E293C9EF21871C4700C112AB /* C1 */ = {
+			isa = PBXGroup;
+			children = (
+				E293CA3121872B2000C112AB /* C1ViewController.swift */,
+			);
+			name = C1;
+			path = Common/C1;
+			sourceTree = "<group>";
+		};
+		E293C9F121871C5700C112AB /* C2 */ = {
+			isa = PBXGroup;
+			children = (
+				E293CA0521871C9600C112AB /* C2ViewController.swift */,
+			);
+			path = C2;
+			sourceTree = "<group>";
+		};
+		E293C9F221871C6400C112AB /* C3 */ = {
+			isa = PBXGroup;
+			children = (
+				E293CA3321872B3400C112AB /* C3ViewController.swift */,
+			);
+			path = C3;
+			sourceTree = "<group>";
+		};
+		E293C9F321871C6C00C112AB /* C4 */ = {
+			isa = PBXGroup;
+			children = (
+				E293CA3521872B4100C112AB /* C4ViewController.swift */,
+			);
+			path = C4;
+			sourceTree = "<group>";
+		};
+		E293C9F421871C7300C112AB /* C5 */ = {
+			isa = PBXGroup;
+			children = (
+				E293CA3721872B5000C112AB /* C5ViewController.swift */,
+			);
+			path = C5;
+			sourceTree = "<group>";
+		};
+		E2EE07A3217D227400866DF8 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				E2EE07A4217D228A00866DF8 /* Networking */,
+				E293CA3921873D2200C112AB /* Double+.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		E2EE07A4217D228A00866DF8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E2EE07A8217D22DF00866DF8 /* Environment.swift */,
+				E2EE07A9217D22DF00866DF8 /* ErrorHandler.swift */,
+				E2EE07A7217D22DF00866DF8 /* NetworkConfig.swift */,
+				E2EE07A5217D22DF00866DF8 /* NetworkServiceManager.swift */,
+				E2EE07A6217D22DF00866DF8 /* ServiceCall.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E2EE07AF217D240600866DF8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E220E0B42180FC99006BE5B8 /* Models */,
+				E2EE07B0217D240A00866DF8 /* MapWorker */,
+				E2576980217FB86500B3033F /* GEOJSONKit.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E2EE07B0217D240A00866DF8 /* MapWorker */ = {
+			isa = PBXGroup;
+			children = (
+				E2EE07B1217D242400866DF8 /* MapWorker.swift */,
+			);
+			path = MapWorker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E214264A216559FD00B1BF43 /* FIIT-PDT-Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E214265D216559FF00B1BF43 /* Build configuration list for PBXNativeTarget "FIIT-PDT-Project" */;
+			buildPhases = (
+				20E8FFA13652A5357C93DEF9 /* [CP] Check Pods Manifest.lock */,
+				E2142647216559FD00B1BF43 /* Sources */,
+				E2142648216559FD00B1BF43 /* Frameworks */,
+				E2142649216559FD00B1BF43 /* Resources */,
+				7B66DB296E26DC4C163ED478 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FIIT-PDT-Project";
+			productName = "FIIT-PDT-Project";
+			productReference = E214264B216559FD00B1BF43 /* FIIT-PDT-Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2142643216559FD00B1BF43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "FIIT-PDT";
+				TargetAttributes = {
+					E214264A216559FD00B1BF43 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = E2142646216559FD00B1BF43 /* Build configuration list for PBXProject "FIIT-PDT-Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2142642216559FD00B1BF43;
+			productRefGroup = E214264C216559FD00B1BF43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E214264A216559FD00B1BF43 /* FIIT-PDT-Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2142649216559FD00B1BF43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2142659216559FF00B1BF43 /* LaunchScreen.storyboard in Resources */,
+				E2142656216559FF00B1BF43 /* Assets.xcassets in Resources */,
+				E2142654216559FD00B1BF43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E8FFA13652A5357C93DEF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FIIT-PDT-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B66DB296E26DC4C163ED478 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FIIT-PDT-Project/Pods-FIIT-PDT-Project-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GEOSwift/GEOSwift.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/geos/geos.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GEOSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/geos.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIIT-PDT-Project/Pods-FIIT-PDT-Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2142647216559FD00B1BF43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E220E0D32181012A006BE5B8 /* MapViewViewController.swift in Sources */,
+				E220E0BB2180FD36006BE5B8 /* GeomConverter.swift in Sources */,
+				E2142651216559FD00B1BF43 /* MapViewController02.swift in Sources */,
+				E220E0D02181012A006BE5B8 /* MapViewWorker.swift in Sources */,
+				E2EE07AE217D22DF00866DF8 /* ErrorHandler.swift in Sources */,
+				E2576981217FB86500B3033F /* GEOJSONKit.swift in Sources */,
+				E293CA3621872B4100C112AB /* C4ViewController.swift in Sources */,
+				E220E0DB21810426006BE5B8 /* GeomCollectionConverter.swift in Sources */,
+				E293CA0B21871C9600C112AB /* C2ViewController.swift in Sources */,
+				E2EE07B2217D242400866DF8 /* MapWorker.swift in Sources */,
+				E2EE07AD217D22DF00866DF8 /* Environment.swift in Sources */,
+				E293CA3421872B3400C112AB /* C3ViewController.swift in Sources */,
+				E2EE07AC217D22DF00866DF8 /* NetworkConfig.swift in Sources */,
+				E220E0D921810417006BE5B8 /* GeomCollectionDto.swift in Sources */,
+				E220E0D12181012A006BE5B8 /* MapViewRouter.swift in Sources */,
+				E2EE07AB217D22DF00866DF8 /* ServiceCall.swift in Sources */,
+				E293CA3821872B5000C112AB /* C5ViewController.swift in Sources */,
+				E220E0CF2181012A006BE5B8 /* MapViewPresenter.swift in Sources */,
+				E220E0D42181012A006BE5B8 /* MapViewInteractor.swift in Sources */,
+				E220E0D22181012A006BE5B8 /* MapViewModels.swift in Sources */,
+				E220E0B92180FD27006BE5B8 /* GeomDto.swift in Sources */,
+				E214264F216559FD00B1BF43 /* AppDelegate.swift in Sources */,
+				E293CA3A21873D2200C112AB /* Double+.swift in Sources */,
+				E293CA3221872B2000C112AB /* C1ViewController.swift in Sources */,
+				E2EE07B4217D372500866DF8 /* GeoJSONConverter.swift in Sources */,
+				E220E0B72180FCD7006BE5B8 /* Geom.swift in Sources */,
+				E2EE07AA217D22DF00866DF8 /* NetworkServiceManager.swift in Sources */,
+				E220E0D72181040A006BE5B8 /* GeomCollection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2142652216559FD00B1BF43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2142653216559FD00B1BF43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2142657216559FF00B1BF43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2142658216559FF00B1BF43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E214265B216559FF00B1BF43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E214265C216559FF00B1BF43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E214265E216559FF00B1BF43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137C13B19A9B65EFB856CA33 /* Pods-FIIT-PDT-Project.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV8CH2ZJU9;
+				INFOPLIST_FILE = "FIIT-PDT-Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.FIIT.FIIT-PDT-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E214265F216559FF00B1BF43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8749156181C11B053263C95D /* Pods-FIIT-PDT-Project.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV8CH2ZJU9;
+				INFOPLIST_FILE = "FIIT-PDT-Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sk.FIIT.FIIT-PDT-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2142646216559FD00B1BF43 /* Build configuration list for PBXProject "FIIT-PDT-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E214265B216559FF00B1BF43 /* Debug */,
+				E214265C216559FF00B1BF43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E214265D216559FF00B1BF43 /* Build configuration list for PBXNativeTarget "FIIT-PDT-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E214265E216559FF00B1BF43 /* Debug */,
+				E214265F216559FF00B1BF43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2142643216559FD00B1BF43 /* Project object */;
+}
